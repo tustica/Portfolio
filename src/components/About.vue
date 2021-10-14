@@ -3,7 +3,7 @@
         <div id="text-section" class="col">
             <h1 id="about-me">About Me</h1>
             <p class="about-text">I'm an aspiring software developer based in Dallas, TX. I enjoy creating exciting and engaging websites.</p>
-            <p class="about-text">My goal is to be a well-rounded developer, profiecient in frontend, backend, and design.</p>
+            <p class="about-text">My goal is to be a well-rounded developer, proficient in frontend, backend, and design.</p>
         </div>
         <div id="spinning" class="col">
             <div class="first-set">
