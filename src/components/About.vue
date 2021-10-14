@@ -147,18 +147,23 @@ $smphone: 320px;
     }
     .about-text{
         font-size: 16px;
+        padding: 0px;
     }
     .circle{
         width: 1.5rem;
         height: 1.5rem;
     }
     #text-section{
-        font-size: 20px;
+        height: 300px;
     }
 }
 @media screen and (max-width: $mphone) {
     .about-text{
-        font-size: 15.5px;
+        font-size: 14px;
+        padding: 0px;
+    }
+    #text-section{
+        height: 300px;
     }
 }
 @media screen and (max-width:$smphone) {

@@ -118,7 +118,7 @@ $smphone: 320px;
     animation: slide 15s ease-in-out infinite;
 }
 @keyframes slide {
-    0%{margin-top: -350px;}
+    0%{margin-top: -320px;}
     5%{margin-top: -255px;}
     18%{margin-top: -255px;}
     23%{margin-top: -195px;}
@@ -128,9 +128,8 @@ $smphone: 320px;
     61%{margin-top: -75px;}
     74%{margin-top: -75px;}
     79%{margin-top: -10px}
-    92%{margin-top: -10px;}
-    98%{margin-top: 50px;}
-    100%{margin-top: 50px;}
+    95%{margin-top: -10px;}
+    100%{margin-top: 55px;}
 }
 @media screen and (max-width: $tablet) {
     .intro{

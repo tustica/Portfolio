@@ -157,7 +157,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: #313a89;
         margin: 0px;
         height: 8rem;
         h2{
@@ -243,6 +243,14 @@ export default {
     @media screen and (max-width: $phone){
         .project-list{
             position: absolute;
+            height: 510vh;
+            top: 1900px;
+        }
+    }
+    @media screen and (max-width: $mphone){
+        .project-list{
+            position: absolute;
+            height: 560vh;
             top: 1900px;
         }
     }

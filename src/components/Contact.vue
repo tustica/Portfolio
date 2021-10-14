@@ -127,7 +127,7 @@ export default {
     @media screen and (max-width: $phone){
         .contact{
             width: 100vw;
-            height: 930px;
+            height: 1300px;
             overflow: hidden;
             position: absolute;
             top: 5650px;
@@ -148,7 +148,7 @@ export default {
             height: 1200px;
             overflow: hidden;
             position: absolute;
-            top: 5650px;
+            top: 5700px;
             h1{
                 padding: 40px;
             }

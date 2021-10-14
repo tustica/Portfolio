@@ -250,28 +250,28 @@ export default {
     }
     @media screen and (max-width:375px){
         #python{
-            top: 450px;
+            top: 515px;
             left: 45px;
         }
         #vue{
-            top: 450px;
+            top: 515px;
             left: 250px;
         }
         #sql{
-            top: 575px;
+            top: 615px;
             left: 45px;
         }
         #css{
-            top: 575px;
+            top: 615px;
             left: 260px;
         }
         #html{
-            top: 700px;
+            top: 715px;
             left: 50px;
             width: 65px;
         }
         #javascript{
-            top: 695px;
+            top: 710px;
             left: 260px;
         }
     }
