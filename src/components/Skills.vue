@@ -5,38 +5,34 @@
             <p>What I've learned so far</p>
         </div>
         <div class="skills">
-            <div class="item">
+            <div class="leftcolumns">
+                <img class="icons" src="../assets/sqlserver.png" alt="sqlserver">
+                <img class="icons" src="../assets/css.png" alt="css">
+                <img class="icons" src="../assets/html.png" alt="html">
+                <img class="icons" src="../assets/javascript.jpg" alt="js">
+            </div>
+            <div class="skillnames">
                 <h2>Languages</h2>
-                <p>Python, Javascript, HTML, CSS</p>
-            </div>
-            <div class="item">
                 <h2>Frameworks</h2>
-                <p>Django</p>
-            </div>
-            <div class="item">
                 <h2>Frontend</h2>
-                <p>VueJS, Jquery, SCSS, Bootstrap</p>
-            </div>
-            <div class="item">
                 <h2>Database</h2>
-                <p>SQL Server, MySQL</p>
-            </div>
-            <div class="item">
                 <h2>Design</h2>
-                <p>Photoshop</p>
-            </div>
-            <div class="item">
                 <h2>Other Concepts</h2>
+            </div>
+            <div class="technames">
+                <p>Python, Javascript, HTML, CSS</p>
+                <p>Django</p>
+                <p>VueJS, Jquery, SCSS, Bootstrap</p>
+                <p>SQL Server, MySQL</p>
+                <p>Photoshop</p>
                 <p>AJAX, CRUD, RESTful</p>
             </div>
-            <img id="sql" class="icons" src="../assets/sqlserver.png" alt="sqlserver">
-            <img id="python" class="icons" src="../assets/python.png" alt="python">
-            <img id="javascript" class="icons" src="../assets/javascript.jpg" alt="js">
-            <img id="html" src="../assets/html.png" alt="html" class="icons">
-            <img id="css" src="../assets/css.png" alt="css" class="icons">
-            <img id="vue" src="../assets/vue.png" alt="vue" class="icons">
-            <img id="jquery" src="../assets/jquery.png" alt="jquery" class="icons">
-            <img id="photoshop" src="../assets/photoshop.png" alt="photoshop" class="icons">
+            <div class="rightcolumns">
+                <img class="icons" src="../assets/python.png" alt="python">
+                <img class="icons" src="../assets/vue.png" alt="vue">
+                <img class="icons" src="../assets/jquery.png" alt="jquery">
+                <img class="icons" src="../assets/photoshop.png" alt="photoshop">
+            </div>
         </div>
     </div>
 </template>
@@ -60,6 +56,7 @@ export default {
         background-image: url('../assets/skills-pic2.jpg');
         background-attachment: fixed;
         background-size: cover;
+        margin-bottom: 40px;
         h1{
             color: white;
             font-size: 60px;
@@ -72,126 +69,67 @@ export default {
         }
     }
     .skills{
-        padding: 40px 350px;
-    }
-    .item{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        .skillnames{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .technames{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         h2{
             font-size: 40px;
+            margin: 30px 0px;
             color: #313a89;
             font-family: 'Montserrat', sans-serif;
+            height: 35px;
         }
         p{
-            font-size: 25px;
+            font-size: 30px;
             color: black;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
+            height: 25px;
         }
+    
+        .leftcolumns{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .rightcolumns{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        // align-items: center;
     }
     .icons{
         width: 120px;
     }
-    #python{
-        position: absolute;
-        top: 1200px;
-        left: 1120px;
-    }
-    #vue{
-        position: absolute;
-        top: 1375px;
-        left: 1130px;
-        width: 100px;
-    }
-    #sql{
-        position: absolute;
-        top: 1200px;
-        left: 85px;
-    }
-    #css{
-        position: absolute;
-        left: 85px;
-        top: 1370px;
-        // width: 155px;
-    }
-    #html{
-        position: absolute;
-        left: 98px;
-        top: 1560px;
-        width: 95px;
-    }
-    #javascript{
-        position: absolute;
-        left: 87px;
-        top: 1740px;
-    }
-    #jquery{
-        position: absolute;
-        left: 1130px;
-        top: 1530px;
-    }
-    #photoshop{
-        position: absolute;
-        top: 1720px;
-        left: 1130px;
-        width: 110px;
+    
+    @media screen and (max-width: 1600px) {
+        
     }
     @media screen and (max-width:768px) {
         .header{
             position: absolute;
-            top: 1100px
+            top: 1100px;
         }
         .skills{
             position: absolute;
             top: 1350px;
             padding: 10px 30px;
-        }
-        .icons{
-            width: 80px;
-        }
-        #python{
-            top: 30px;
-            left: 650px;
-        }
-        #vue{
-            top: 30px;
-            left: 450px;
-        }
-        #sql{
-            top: 150px;
-            left: 465px;
-        }
-        #css{
-            top: 150px;
-            left: 650px;
-        }
-        #html{
-            top: 280px;
-            left: 470px;
-            width: 70px;
-        }
-        #javascript{
-            top: 280px;
-            left: 650px;
-        }
-        #photoshop{
-            position: absolute;
-            top: 0px;
-            left: -300px;
-        }
-        #jquery{
-            position: absolute;
-            top: 0px;
-            left: -300px;
-        }
-        .item{
-            h2{
-                font-size: 25px;
-            }
-            p{
-                font-size: 15px;
-            }
         }
     }
     @media screen and (max-width:425px){
@@ -202,117 +140,48 @@ export default {
         .skills{
             position: absolute;
             top: 1150px;
-
-        }
-        .item{
+            height: 85%;
+            overflow-x: hidden;
             h2{
-                text-align: left;
-            }
+                margin-top: 40px;
+            font-size: 20px;
+            }   
             p{
-                text-align: right;
+                // margin: 30px;
+                font-size: 16px;
             }
         }
-        #python{
-            top: 500px;
-            left: 70px;
-        }
-        #vue{
-            top: 500px;
-            left: 250px;
-        }
-        #sql{
-            top: 605px;
-            left: 70px;
-        }
-        #css{
-            top: 605px;
-            left: 260px;
-        }
-        #html{
-            top: 710px;
-            left: 75px;
-            width: 65px;
-        }
-        #javascript{
-            top: 710px;
-            left: 260px;
-        }
-        #photoshop{
-            position: absolute;
-            top: 0px;
-            left: -300px;
-        }
-        #jquery{
-            position: absolute;
-            top: 0px;
-            left: -300px;
+        .icons{
+            width: 50px;
+            height: 50px;
         }
     }
     @media screen and (max-width:375px){
-        #python{
-            top: 515px;
-            left: 45px;
+        .skills h2{
+            margin: 0px;
         }
-        #vue{
-            top: 515px;
-            left: 250px;
-        }
-        #sql{
-            top: 615px;
-            left: 45px;
-        }
-        #css{
-            top: 615px;
-            left: 260px;
-        }
-        #html{
-            top: 715px;
-            left: 50px;
-            width: 65px;
-        }
-        #javascript{
-            top: 710px;
-            left: 260px;
+        .icons{
+            width: 45px;
+            height: 45px;
         }
     }
     @media screen and (max-width:320px){
         .header{
             position: absolute;
-            top: 890px;
+            top: 850px;
             p{
                 padding: 10px;
             }
         }
         .skills{
             position: absolute;
-            top: 1200px;
+            padding: 10px;
+            top: 1350px;
+            left: 0px;
         }
         .icons{
-            width: 50px;
-        }
-        #python{
-            top: 500px;
-            left: 80px;
-        }
-        #sql{
-            left: 80px;
-        }
-        #css{
-            left: 205px;
-        }
-        #vue{
-            top: 500px;
-            left: 200px;
-            width: 60px;
-        }
-        #html{
-            top: 650px;
-            left: 80px;
-            width: 45px;
-        }
-        #javascript{
-            top: 650px;
-            left: 205px;
+            width: 40px;
+            height: 40px;
         }
     }
 </style>

@@ -176,21 +176,21 @@ export default {
         color: #313a89;
         width: 0%;
         height: 0%;
-        top: 2580px;
+        top: 2500px;
         left: 200px;
     }
     #icon2{
         cursor: pointer;
         position: absolute;
         color: #313a89;
-        top: 2580px;
+        top: 2500px;
         left: 660px;
     }
     #icon3{
         cursor: pointer;
         position: absolute;
         color: #313a89;
-        top: 2580px;
+        top: 2500px;
         left: 1115px;
     }
     #icon4{
@@ -199,21 +199,21 @@ export default {
         color: #313a89;
         width: 0%;
         height: 0%;
-        top: 3250px;
+        top: 3180px;
         left: 200px;
     }
     #icon5{
         cursor: pointer;
         position: absolute;
         color: #313a89;
-        top: 3250px;
+        top: 3180px;
         left: 660px;
     }
     #icon6{
         cursor: pointer;
         position: absolute;
         color: #313a89;
-        top: 3250px;
+        top: 3180px;
         left: 1115px;
     }
     .fade-enter-active, .fade-leave-active {
