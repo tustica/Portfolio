@@ -90,11 +90,11 @@ export default {
                 color: white;
                 font-size: 30px;
                 font-family: 'Montserrat', sans-serif;
-                background-color: orange;
+                background-color: rgb(206, 58, 0);
                 transition: all .3s ease-in-out;
             }
             #send:hover{
-                background-color: rgba(255, 166, 0, 0.644);
+                background-color: rgb(255, 136, 0);
             }
         }
     }
@@ -106,7 +106,7 @@ export default {
         transition: .3s ease-in-out;
     }
     #github:hover, #linkedin:hover{
-        background-color: orange;
+        background-color: rgb(206, 58, 0);
         cursor: pointer;
     }
     @media screen and (max-width: $tablet) {

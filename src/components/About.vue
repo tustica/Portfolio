@@ -84,7 +84,7 @@ $smphone: 320px;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: orangered;
+    background: radial-gradient(rgb(206, 58, 0), rgb(255, 136, 0));
     animation: anim 5s infinite ease-in-out;
 }
 .col > div .circle:last-child{

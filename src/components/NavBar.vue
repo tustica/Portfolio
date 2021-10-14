@@ -37,7 +37,7 @@ export default {
       window.scroll({top: 810, behavior: 'smooth'})
     },
     scrollProjects(){
-      window.scroll({top: 1880, behavior: 'smooth'})
+      window.scroll({top: 1810, behavior: 'smooth'})
     },
     scrollContact(){
       window.scroll({top:6000, behavior: 'smooth'})
