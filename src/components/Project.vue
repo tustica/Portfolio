@@ -34,7 +34,8 @@ export default {
             border-radius: 10%;
             opacity: .8;
             cursor: pointer;
-            filter: hue-rotate(40deg);
+            filter: saturate(3);
+            
         }
         h1{
             color: #313a89;
@@ -52,13 +53,21 @@ export default {
             margin-top: 20px;
             font-weight: 700;
             font-family: 'Montserrat', sans-serif;
-            transition: .3s ease-in-out;
+            transition: .2s ease-in-out;
         }
         #goto:hover{
             cursor: pointer;
-            filter: brightness(50%);
+            background-color: rgba(0, 0, 255, 0.575);
+            animation: shake .3s linear;
         }
     }
+    @keyframes shake{
+        0%{transform: rotate(0deg);}
+        33%{transform: rotate(10deg);}
+        66%{transform: rotate(-8deg);}
+        100%{transform: rotate(0deg);}
+    }
+
     $tablet: 768px;
     $phone: 425px;
     $mphone: 375px;
