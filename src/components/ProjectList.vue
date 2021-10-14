@@ -250,7 +250,7 @@ export default {
     @media screen and (max-width: $mphone){
         .project-list{
             position: absolute;
-            height: 560vh;
+            height: 600vh;
             top: 1900px;
         }
     }

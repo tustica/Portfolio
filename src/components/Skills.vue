@@ -213,28 +213,28 @@ export default {
             }
         }
         #python{
-            top: 450px;
+            top: 500px;
             left: 70px;
         }
         #vue{
-            top: 450px;
+            top: 500px;
             left: 250px;
         }
         #sql{
-            top: 575px;
+            top: 605px;
             left: 70px;
         }
         #css{
-            top: 575px;
+            top: 605px;
             left: 260px;
         }
         #html{
-            top: 700px;
+            top: 710px;
             left: 75px;
             width: 65px;
         }
         #javascript{
-            top: 695px;
+            top: 710px;
             left: 260px;
         }
         #photoshop{
