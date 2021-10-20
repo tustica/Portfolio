@@ -12,8 +12,8 @@
                 <img class="icons" src="../assets/javascript.jpg" alt="js">
             </div>
             <div class="skillnames">
-                <h2>Languages</h2>
-                <h2>Frameworks</h2>
+                <h2>Languages:</h2>
+                <h2>Frameworks:</h2>
                 <h2>Frontend</h2>
                 <h2>Database</h2>
                 <h2>Design</h2>

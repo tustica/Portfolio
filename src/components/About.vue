@@ -2,16 +2,17 @@
     <div class="about">
         <div id="text-section" class="col">
             <h1 id="about-me">About Me</h1>
-            <p class="about-text">I'm an aspiring software developer based in Dallas, TX. I enjoy creating exciting and engaging websites.</p>
+            <p class="about-text">I'm an aspiring software developer based in Dallas, TX. I love to create engaging modern websites.</p>
             <p class="about-text">My goal is to be a well-rounded developer, proficient in frontend, backend, and design.</p>
         </div>
         <div id="spinning" class="col">
-            <div class="first-set">
-                <div class="circle"></div>
+            <div class="circle_contain">
                 <div class="circle"></div>
             </div>
-            <div class="second-set">
+            <div class="circle_contain">
                 <div class="circle"></div>
+            </div>
+            <div class="circle_contain">
                 <div class="circle"></div>
             </div>
         </div>
@@ -45,8 +46,9 @@ $smphone: 320px;
     }
     #about-me{
         font-size: 40px;
-        color: #313a89;
+        color: white;
         font-family: 'Montserrat', sans-serif;
+        text-align: left;
         margin: 0px;
     }
     .about-text{
@@ -54,7 +56,7 @@ $smphone: 320px;
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
         padding-bottom: 30px;
-        color: black;
+        color: white;
         text-align: left;
         margin: 0px;
     }
@@ -73,47 +75,86 @@ $smphone: 320px;
         width: 50%;
         height: 70vh;
         float: left;
+        background: radial-gradient(#313a89,#3d469b );
     }
     #spinning{
-        background-color: #313a89;
+        background: radial-gradient(#313a89,#3d469b );
     }
-    .first-set, .second-set{
-        filter: url('#goo');
-    }
-.circle {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: radial-gradient(rgb(206, 58, 0), rgb(255, 136, 0));
-    animation: anim 5s infinite ease-in-out;
-}
-.col > div .circle:last-child{
-    animation-delay: -2.5s;
-}
-.col > div:last-child{
-    transform: rotate(90deg)
-}
-.col > div{
+.circle_contain{
+    zoom: 80%;
+    width: 400px;
+    height: 300px;
     position: absolute;
-    top: 90%;
-    left: 75%;
+    left: 50%;
+    top: 50%;
+    transform: translate(110%, 120%);
+}
+.circle_contain::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    bottom: 0;
+    opacity: .4;
+    top: 70%;
+    left: 0%;
+    animation: shadow 3s linear infinite;
+}
+.circle_contain:nth-child(2):after{
+    animation-delay: .4s;
+}
+.circle_contain:nth-child(3):after{
+    animation-delay: .8s;
+}
+.circle_contain:nth-child(2) .circle{
+    animation-delay: -.4s;
+}
+.circle_contain:nth-child(3) .circle{
+    animation-delay: -.8s;
+}
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: radial-gradient(rgb(251, 176, 12), rgb(255, 136, 0));
+    animation: anim 3s linear infinite;
 }
 @keyframes anim{
+    0% {
+    transform-origin: 500% 50%;
+    }
+    50% {
+        transform: rotate(
+    1turn);
+        transform-origin: 500% 50%;
+    }
+    50.1% {
+        transform: rotate(0);
+        transform-origin: -400% 50%;
+    }
+    100% {
+        transform: rotate(
+    -1turn);
+        transform-origin: -400% 50%;
+    }
+}
+@keyframes shadow{
     0%{
-        transform-origin: 50% -100%;
-        transform: rotate(0deg);
+        transform: translate(800%) scale(1);
     }
-    50%{
-        transform-origin: 50% -100%;
-        transform: rotate(360deg);
+    25%{
+        transform: translate(0%) scale(.5);
     }
-    50.1%{
-        transform-origin: 50% 200%;
-        transform: rotate(0deg);
+    50% {
+        transform: translate(-800%) scale(1);
     }
-    100%{
-        transform-origin: 50% 200%;
-        transform: rotate(360deg)
+    75%{
+        transform: translate(0%) scale(.5);
+    }
+    100% {
+        transform: translate(800%) scale(1);
     }
 }
 

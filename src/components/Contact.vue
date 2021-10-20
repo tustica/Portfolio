@@ -103,7 +103,7 @@ export default {
         height: 150px;
         margin: 30px;
         border-radius: 70%;
-        transition: .3s ease-in-out;
+        transition: .2s ease-in-out;
     }
     #github:hover, #linkedin:hover{
         background-color: rgb(206, 58, 0);

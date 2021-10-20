@@ -43,6 +43,7 @@ $smphone: 320px;
     background-attachment: fixed;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
 }
 
 .col{
@@ -52,7 +53,7 @@ $smphone: 320px;
 }
 #lame-pic{
     position: absolute;
-    top: 95px;
+    top: 105px;
     left: 190px;
     width: 300px;
     border-radius: 50%;
@@ -61,7 +62,7 @@ $smphone: 320px;
 #pic-border{
     position: absolute;
     box-shadow: 0 0 15px #313a89, inset 0 0 20px;
-    top: 88px;
+    top: 98px;
     left: 182px;
     border-radius: 100%;
     width: 315px;

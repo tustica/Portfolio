@@ -31,16 +31,16 @@ export default {
   },
   methods: {
     scrollAbout(){
-      window.scroll({top: 350, behavior:'smooth'})
+      window.scroll({top: 385, behavior:'smooth'})
     },
     scrollSkills(){
-      window.scroll({top: 810, behavior: 'smooth'})
+      window.scroll({top: 845, behavior: 'smooth'})
     },
     scrollProjects(){
-      window.scroll({top: 1810, behavior: 'smooth'})
+      window.scroll({top: 1845, behavior: 'smooth'})
     },
     scrollContact(){
-      window.scroll({top:6000, behavior: 'smooth'})
+      window.scroll({top:5500, behavior: 'smooth'})
     },
 
     mobileMenu() {
