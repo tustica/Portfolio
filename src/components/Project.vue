@@ -1,7 +1,7 @@
 <template>
     <div class="project">
         <h1>{{proj_name}}</h1>
-        <img class="image" :src=pic_source alt="picture" >
+        <img class="image" :src=pic_source alt="picture">
         <a target="blank" :href=proj_url><button id="goto">{{button_name}}</button></a>
     </div> 
 </template>
@@ -32,7 +32,7 @@ export default {
         }
         img:hover{
             border-radius: 10%;
-            opacity: .8;
+            opacity: .5;
             cursor: pointer;
             filter: saturate(3);
             

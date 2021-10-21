@@ -10,17 +10,10 @@
             </div>
             <div class="frontend-projs">
                 <Project @click.native="openBank()" @mouseover.native="mouseOver1()" @mouseleave.native="mouseLeave1()" class="project" proj_name="Bank App" :pic_source="require(`../assets/timbank.png`)" proj_url="https://timbank.netlify.app" button_name="Go to Site" />
-                <transition name="fade">
-                    <i v-show="active1" id="icon1" class="fas fa-search fa-4x"></i>
-                </transition>
+                
                 <Project @click.native="openSeafood()" @mouseover.native="mouseOver2()" @mouseleave.native="mouseLeave2()" class="project" proj_name="Seafood Restaurant" :pic_source="require(`../assets/seafood.png`)" proj_url="https://sammyseafood.netlify.app/" button_name="Go to Site"/>
-                <transition name="fade">
-                    <i v-show="active2" id="icon2" class="fas fa-search fa-4x"></i>
-                </transition>
+                
                 <Project @click.native="openFurniture()" @mouseover.native="mouseOver3()" @mouseleave.native="mouseLeave3()" class="project" proj_name="Room Decoration" :pic_source="require(`../assets/room.png`)" proj_url="https://timfurniture.netlify.app/" button_name="Go to Site"/>
-                <transition name="fade">
-                    <i v-show="active3" id="icon3" class="fas fa-search fa-4x"></i>
-                </transition>
             </div>
         </div>
         <div class="backend">
@@ -29,17 +22,11 @@
             </div>
             <div class="frontend-projs">
                 <Project @click.native="openPoke()" @mouseover.native="mouseOver4()" @mouseleave.native="mouseLeave4()" class="project" proj_name="Pokedex" :pic_source="require(`../assets/pokemon.png`)" proj_url="https://github.com/tustica/PokemonAPI" button_name="Go to Github"/>
-                <transition name="fade">
-                    <i v-show="active4" id="icon4" class="fas fa-search fa-4x"></i>
-                </transition>
+
                 <Project @click.native="openBooks()" @mouseover.native="mouseOver5()" @mouseleave.native="mouseLeave5()" class="project" proj_name="Favorite Books" :pic_source="require(`../assets/favbooks.png`)" proj_url="https://github.com/tustica/Favorite_Books" button_name="Go to Github"/>
-                <transition name="fade">
-                    <i v-show="active5" id="icon5" class="fas fa-search fa-4x"></i>
-                </transition>
+                
                 <Project @click.native="openFilter()" @mouseover.native="mouseOver6()" @mouseleave.native="mouseLeave6()" class="project" proj_name="List Filter" :pic_source="require(`../assets/listfilter.png`)" proj_url="https://github.com/tustica/RecordFilter" button_name="Go to Github"/>
-                <transition name="fade">
-                    <i v-show="active6" id="icon6" class="fas fa-search fa-4x"></i>
-                </transition>
+                
             </div>
         </div>
     </div>
@@ -190,17 +177,17 @@ export default {
         cursor: pointer;
         position: absolute;
         color: #313a89;
-        top: 2550px;
-        left: 1115px;
+        top: 250px;
+        left: -250px;
     }
     #icon4{
         cursor: pointer;
-        position: absolute;
+        position: relative;
         color: #313a89;
         width: 0%;
         height: 0%;
-        top: 3230px;
-        left: 200px;
+        top: 250px;
+        left: -250px;
     }
     #icon5{
         cursor: pointer;
