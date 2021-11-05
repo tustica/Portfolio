@@ -196,10 +196,10 @@ $smphone: 320px;
         height: 1.5rem;
     }
     #text-section{
-        height: 320px;
+        height: 335px;
     }
     #spinning{
-        height: 320px;
+        height: 335px;
     }
     .circle_contain{
     zoom: 80%;
@@ -208,7 +208,7 @@ $smphone: 320px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(20%, 0%);
+    transform: translate(30%, 0%);
 }
 }
 @media screen and (max-width: $mphone) {
