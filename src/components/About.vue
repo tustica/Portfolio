@@ -181,7 +181,8 @@ $smphone: 320px;
 @media screen and (max-width:$phone) {
     .about{
         position: absolute;
-        top: 500px;
+        top: 570px;
+        overflow: hidden;
     }
     #about-me{
         font-size: 23px;
@@ -195,8 +196,20 @@ $smphone: 320px;
         height: 1.5rem;
     }
     #text-section{
-        height: 300px;
+        height: 320px;
     }
+    #spinning{
+        height: 320px;
+    }
+    .circle_contain{
+    zoom: 80%;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(20%, 0%);
+}
 }
 @media screen and (max-width: $mphone) {
     .about-text{
@@ -204,6 +217,9 @@ $smphone: 320px;
         padding: 0px;
     }
     #text-section{
+        height: 300px;
+    }
+    #spinning{
         height: 300px;
     }
 }
